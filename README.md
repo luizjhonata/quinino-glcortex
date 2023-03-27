@@ -6,6 +6,8 @@
 The main goal of this project is calculate cost of calls using a plan of Q.UININO TELEFONIA and without a plan. 
 To do that, the system has 3 entities, call, plan and tariffs. The entity call is the only that not persist data in the database, because the goal is give to their clientes only a easy way to make the calc, however Q.UININO TELEFONIA is abble to insert, update and delete plans and tariffs.
 
+Link to see the project working with a frontend https://quinino.netlify.app/
+
 ## CALL attributes:
 
 - Origin; (DDD of Origin Call)
@@ -38,6 +40,7 @@ To do that, the system has 3 entities, call, plan and tariffs. The entity call i
 - PUT - updateTariff; (Update any data about a tariff)
 - DETELE - deletePlanById; (Delete a plan by his ID)
 - DELETE - deleteTariffById; (Delete a tariff by his ID)
+
 
 ## SWAGGER DOCUMENTATION
 
@@ -79,6 +82,8 @@ git clone https://github.com/luizjhonata/quinino-glcortex.git
 
 # enter in the quinino-glcortex project folder
 cd quinino-glcortex
+
+# if you will try to use the frontend too, you need to go into the CallController and comment the line 20 @CrosOrigin annotation and uncomment the line 21; 
 
 # run the project
 ./mvnw spring-boot:run
